@@ -13,18 +13,16 @@
         ctr.allMenuItems = [];
 
         ctr.getMatchedMenuItems = function(searchTerm) {
+            // Calling the service.
             MenuSearchService.getMatchedMenuItems(searchTerm).then(
                 function(result) {
+                    // Storing into "found".
                     ctr.found = result;
                 },
                 function(error) {
                     console.log(error);
                 }
             );
-//            console.log(x.type);
-//            x.then(function(result) {
-//                ctr.found = result;
-//            });
         }
 
         ctr.onRemove = function(index) {
