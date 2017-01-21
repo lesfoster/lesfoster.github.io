@@ -13,15 +13,24 @@
         ctr.allMenuItems = [];
 
         ctr.getMatchedMenuItems = function(searchTerm) {
+            var lcSearchTerm = searchTerm.toLowerCase();
             var promise = MenuSearchService.getMenuItems();
             promise.then(function (result) {
                 ctr.allMenuItems = result.data;
+
+                ctr.found = [];
+                var menuItems = ctr.allMenuItems.menu_items;
+                for (var i = 0; i < menuItems.length; i++) {
+                    var item = menuItems[i];
+                    if (item.name.toLowerCase().indexOf(lcSearchTerm) !== -1) {
+                        ctr.found.push(item);
+                    }
+                }
             });
         }
 
         ctr.onRemove = function(index) {
-            console.log("Removing at " + index);
-            ctr.allMenuItems.menu_items.splice(index,1);
+            ctr.found.splice(index,1);
         }
 
     }
