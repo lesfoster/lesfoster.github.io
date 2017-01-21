@@ -9,28 +9,22 @@
     NarrowItDownController.$inject['MenuSearchService'];
     function NarrowItDownController (MenuSearchService) {
         var ctr = this;
-        var found;
-        var allMenuItems = [
-            {"name":"-"}
-        ];
+        ctr.found = [];
+        ctr.allMenuItems = [];
 
         ctr.getMatchedMenuItems = function(searchTerm) {
             var promise = MenuSearchService.getMenuItems();
             promise.then(function (result) {
-                allMenuItems = result.data;
-                console.log(allMenuItems.menu_items[0]);
+                ctr.allMenuItems = result.data;
             });
         }
 
-    }
+        ctr.onRemove = function(index) {
+            console.log("Removing at " + index);
+            ctr.allMenuItems.menu_items.splice(index,1);
+        }
 
-//    function MenuSearchFactory() {
-//        var factory = function (maxItems) {
-//            return new MenuSearchService();
-//        };
-//
-//        return factory;
-//    }
+    }
 
     // Service: accessible by controller, and talks to the true model.
     MenuSearchService.$inject['$http'];
@@ -60,17 +54,13 @@
             return false;
         };
 
-        list.onRemove = function(index) {
-            console.log("Removing " + index);
-        }
-
     }
 
     function FoundItemsDirective() {
         var ddo = {
             templateUrl: 'foundItems.html',
             scope: {
-                found: '@',
+                found: '=found',
                 foundTitle: '@title',
                 onRemove: '&'
             },
