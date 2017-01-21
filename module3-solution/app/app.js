@@ -13,20 +13,18 @@
         ctr.allMenuItems = [];
 
         ctr.getMatchedMenuItems = function(searchTerm) {
-            var lcSearchTerm = searchTerm.toLowerCase();
-            var promise = MenuSearchService.getMenuItems();
-            promise.then(function (result) {
-                ctr.allMenuItems = result.data;
-
-                ctr.found = [];
-                var menuItems = ctr.allMenuItems.menu_items;
-                for (var i = 0; i < menuItems.length; i++) {
-                    var item = menuItems[i];
-                    if (item.name.toLowerCase().indexOf(lcSearchTerm) !== -1) {
-                        ctr.found.push(item);
-                    }
+            MenuSearchService.getMatchedMenuItems(searchTerm).then(
+                function(result) {
+                    ctr.found = result;
+                },
+                function(error) {
+                    console.log(error);
                 }
-            });
+            );
+//            console.log(x.type);
+//            x.then(function(result) {
+//                ctr.found = result;
+//            });
         }
 
         ctr.onRemove = function(index) {
@@ -47,6 +45,22 @@
             return $http(config);
         }
 
+        service.getMatchedMenuItems = function(searchTerm) {
+            var lcSearchTerm = searchTerm.toLowerCase();
+            var promise = service.getMenuItems();
+            return promise.then(function (result) {
+                var menuItems = result.data.menu_items;
+                var foundItems = []
+                for (var i = 0; i < menuItems.length; i++) {
+                    var item = menuItems[i];
+                    if (item.name.toLowerCase().indexOf(lcSearchTerm) !== -1) {
+                        foundItems.push(item);
+                    }
+                }
+
+                return foundItems;
+            });
+        }
     }
 
     function FoundItemsDirectiveController() {
