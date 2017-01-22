@@ -1,7 +1,8 @@
-<h3>{{list.foundTitle}}</h3>
+<h3 ng-if="list.found.length > 0">{{list.foundTitle}}</h3>
+<div  ng-if="list.found.length==0">Nothing Found!</div>
 <ol>
     <li ng-repeat="item in list.found">
-        {{ item.name }}
+        <b>{{ item.short_name }}</b> - {{ item.name }} : {{ item.description }}
         <button ng-click="list.onRemove({index: $index})">Remove Item</button>
     </li>
 </ol>

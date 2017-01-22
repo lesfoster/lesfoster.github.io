@@ -44,14 +44,17 @@
         }
 
         service.getMatchedMenuItems = function(searchTerm) {
-            var lcSearchTerm = searchTerm.toLowerCase();
             var promise = service.getMenuItems();
             return promise.then(function (result) {
                 var menuItems = result.data.menu_items;
                 var foundItems = []
+                if (!searchTerm  ||  searchTerm.length == 0) {
+                    return foundItems;
+                }
+                var lcSearchTerm = searchTerm.toLowerCase();
                 for (var i = 0; i < menuItems.length; i++) {
                     var item = menuItems[i];
-                    if (item.name.toLowerCase().indexOf(lcSearchTerm) !== -1) {
+                    if (item.description.toLowerCase().indexOf(lcSearchTerm) !== -1) {
                         foundItems.push(item);
                     }
                 }
