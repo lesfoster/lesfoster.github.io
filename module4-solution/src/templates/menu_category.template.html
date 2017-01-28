@@ -1,7 +1,7 @@
-<div ng-controller="">
-    <h3>{{ $ctrl.myTitle }}</h3>
+<div>
+    <h3>Enjoy {{ $ctrl.myTitle }}</h3>
     <ol>
-        <li ng-repeat="item in $ctrl.categories">
+        <li ng-repeat="item in catctrl.categories">
             <b>{{ item.short_name }}</b> - {{ item.name }}
         </li>
     </ol>

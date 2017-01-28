@@ -20,7 +20,8 @@ function MenuConfig($stateProvider, $urlRouterProvider) {
 
     .state('categories', {
       url: '/categories',
-      templateUrl: 'src/templates/menu_category.template.html'
+      templateUrl: 'src/templates/menu_category.template.html',
+      component: 'categories'
     })
 
     .state('home.items', {
