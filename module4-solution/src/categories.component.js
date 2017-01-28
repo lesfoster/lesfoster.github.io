@@ -7,10 +7,16 @@
                 // The resolve property is to pass data into the controller as part of its initialization.
                 resolve: {
                     // 'categoryData' is injected into catctrl.
-                    categoryData: ['Data', function(Data) {
-                        console.log("Got data.");
-                        return Data.getCategories();
-                    }]
+                    categoryData: ['MenuDataService',
+                        function(MenuDataService) {
+                            console.log("Got data.");
+                            return MenuDataService.getAllCategories();
+                        }
+                    ]
+                    // categoryData: ['Data', function(Data) {
+                    //     console.log("Got data.");
+                    //     return Data.getCategories();
+                    // }]
                 }
                 // ,
                 // bindings: {
