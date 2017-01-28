@@ -1,6 +1,6 @@
 (function () {
 
-angular.module('MenuApp',['ui.router']); //,'Data']);
+angular.module('MenuApp',['ui.router', 'Categories']); //,'Data']);
 
 angular.module('MenuApp')
 .config(MenuConfig);
@@ -20,7 +20,7 @@ function MenuConfig($stateProvider, $urlRouterProvider) {
 
     .state('categories', {
       url: '/categories',
-      templateUrl: 'src/templates/menu_category.template.html',
+      templateUrl: 'src/templates/home.category.template.html',
       component: 'categories'
     })
 
