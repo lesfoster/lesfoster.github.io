@@ -1,19 +1,19 @@
 (function () {
 
 angular.module('Data')
-.service('MenuDataService')
-.config(MenuDataConfig);
+    .service('MenuDataService', MenuDataService);
 
-MenuDataConfig.$inject = ['$http'];
-function MenuDataConfig ($http) {
-    var getAllCategories = function() {
+MenuDataService.$inject = ['$http'];
+function MenuDataService ($http) {
+    var service = this;
+    service.getAllCategories = function() {
         return $http( {
             url: 'https://davids-restaurant.herokuapp.com/categories.json',
             method: 'GET'
         });
     }
 
-    var getItemsForCategory = function(categoryShortName) {
+    service.getItemsForCategory = function(categoryShortName) {
         return $http( {
             params: {"categoryShortName": categoryShortName},
             url:    "https://davids-restaurant.herokuapp.com/menu_items.json?category=:categoryShortName",

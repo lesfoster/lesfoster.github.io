@@ -4,10 +4,10 @@
     angular.module('Categories')
         .controller('CategoryController', CategoryController);
 
-    CategoryController.$inject = ['CategoryData'];
-    function CategoryController(CategoryData) {
+    CategoryController.$inject = ['categoryData'];
+    function CategoryController(categoryData) {
         var catctrl = this;
-        catctrl.categories = CategoryData;
+        catctrl.categories = categoryData;
         console.log("Got categories");
     }
 
