@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('MenuApp',['ui.router', 'Categories','Data']);
+    angular.module('MenuApp',['ui.router','Data','CategoryModule']);
 
     angular.module('MenuApp')
         .config(MenuConfig);
@@ -15,18 +15,18 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'src/templates/home.template.html'
+                templateUrl: 'src/home/template/home.template.html'
             })
 
             .state('categories', {
                 url: '/categories',
-                templateUrl: 'src/templates/home.category.template.html',
-                component: 'categories',
-                controller: 'CategoryController as catctrl',
+                templateUrl: 'src/category_state/template/category.state.template.html',
+                component: 'categoryComponent',
+                controller: 'CategoryStateController as catctrl',
                 // The resolve property is to pass data into the controller as part of its initialization.
                 resolve: {
-                    // 'categoryData' is injected into catctrl.
-                    categoryData: ['MenuDataService',
+                    // 'categoryStateData' is injected into catctrl.
+                    categoryStateData: ['MenuDataService',
                         function(MenuDataService) {
                             console.log("Got data.");
                             // Returns a promise, which needs to get resolved before continuing to the state.
@@ -51,9 +51,11 @@
                 // }];
             })
 
-            .state('home.items', {
+            .state('items', {
                 url: '/items',
-                templateUrl: 'src/templates/menu_items.template.html'
+                templateUrl: 'src/item_state/template/item.state.template.html',
+                component: 'ItemComponent',
+                controller: 'ItemStateController as itemctrl'
             });
     }
 
