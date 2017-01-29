@@ -29,7 +29,18 @@
                     categoryData: ['MenuDataService',
                         function(MenuDataService) {
                             console.log("Got data.");
-                            return MenuDataService.getAllCategories();
+                            // Returns a promise, which needs to get resolved before continuing to the state.
+                            // Here, then will return whichever resolution happens, below.
+                            return MenuDataService.getAllCategories().then(
+                                function(result) {
+                                    return result;
+                                },
+                                function(error) {
+                                    // Figure out that something is wrong.
+                                    console.log("Fail: " + error);
+                                    return [{"short_name":"Nada"}];
+                                }
+                            );
                         }
                     ]
                 }

@@ -9,8 +9,7 @@
     CategoryController.$inject = ['categoryData'];
     function CategoryController(categoryData) {
         var catctrl = this;
-        catctrl.categories = categoryData;
-        catctrl.myTitle = 'This Stuff';
+        catctrl.categories = categoryData.data;
         console.log("Got categories");
     }
 
