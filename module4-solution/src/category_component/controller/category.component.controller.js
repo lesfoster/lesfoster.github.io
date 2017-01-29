@@ -4,10 +4,10 @@
     angular.module('CategoryModule')
         .controller('CategoryComponentController', CategoryComponentController);
 
-    //CategoryComponentController.$inject[ 'Data' ]
-    function CategoryComponentController() {
+    CategoryComponentController.$inject[ 'categoryData' ];
+    function CategoryComponentController(categoryData) {
         var ccctrl = this;
-        ccctrl.categoryData = [{'short_name':'soup'}];//Data.getAllCategories();
+        ccctrl.categoryData = categoryData;
     }
 
 })();
