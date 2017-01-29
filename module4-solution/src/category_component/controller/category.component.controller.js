@@ -4,10 +4,9 @@
     angular.module('CategoryModule')
         .controller('CategoryComponentController', CategoryComponentController);
 
-    CategoryComponentController.$inject[ 'categoryData' ];
-    function CategoryComponentController(categoryData) {
+    function CategoryComponentController() {
         var ccctrl = this;
-        ccctrl.categoryData = categoryData;
+        //ccctrl.categoryData = categoryData;
     }
 
 })();

@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('MenuApp',['ui.router','Data','CategoryModule']);
+    angular.module('MenuApp',['ui.router','Data','CategoryModule', 'ItemModule']);
 
     angular.module('MenuApp')
         .config(MenuConfig);
@@ -21,7 +21,6 @@
             .state('categories', {
                 url: '/categories',
                 templateUrl: 'src/category_state/template/category.state.template.html',
-                component: 'categoryComponent',
                 controller: 'CategoryStateController as catctrl',
                 // The resolve property is to pass data into the controller as part of its initialization.
                 resolve: {
@@ -44,18 +43,32 @@
                         }
                     ]
                 }
-                // ,
-                // categoryData: ['Data', function(Data) {
-                //     console.log("Got data.");
-                //     return Data.getCategories();
-                // }];
             })
 
             .state('items', {
                 url: '/items',
                 templateUrl: 'src/item_state/template/item.state.template.html',
-                component: 'ItemComponent',
-                controller: 'ItemStateController as itemctrl'
+                controller: 'ItemStateController as itemctrl',
+                // The resolve property is to pass data into the controller as part of its initialization.
+                resolve: {
+                    // 'itemStateData' is injected into itemctrl.
+                    itemStateData: ['MenuDataService',
+                        function(MenuDataService) {
+                            console.log("Got category items data.");
+                            // Returns the promise, but I want to see that things work.
+                            return MenuDataService.getItemsForCategory('F').then(
+                                function(result) {
+                                    return result;
+                                },
+                                function(error) {
+                                    // Figure out that something is wrong.
+                                    console.log("Fail: " + error);
+                                    return [{"name":"Nada"}];
+                                }
+                            );
+                        }
+                    ]
+                }
             });
     }
 

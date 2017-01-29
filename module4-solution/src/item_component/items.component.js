@@ -1,10 +1,10 @@
 (function () {
         angular.module('ItemModule', [])
-            .component('ItemComponent',
+            .component('itemComponent',
                 {
-                    templateUrl: 'menu_items.html',
+                    templateUrl: 'src/item_component/template/menu_items.template.html',
                     bindings: {
-                        items: '<',
+                        //items: '<',
                         myTitle: '@title'
                     }
                 }

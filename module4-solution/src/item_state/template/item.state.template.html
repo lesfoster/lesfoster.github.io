@@ -1,2 +1,8 @@
 <h2>Select from these Items</h2>
-<items title="{{itemctrl.categoryName}}" ></items>
+<item-component title="{{itemctrl.items.category.name}}" ></item-component>
+<ul>
+    <li ng-repeat="item in itemctrl.items.menu_items">
+        <b>{{ item.short_name }}</b> - {{ item.name }} : {{ item.description }}
+    </li>
+</ul>
+

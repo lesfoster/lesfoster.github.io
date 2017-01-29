@@ -6,7 +6,7 @@
                 controller: 'CategoryComponentController',
                 controllerAs: 'ccctrl',
                 bindings: {
-                    categoryData: '<',
+                    //categoryData: '<',
                     myTitle: '@title'
                 }
             }

@@ -1,2 +1,9 @@
-<h2>Browse</h2>
+<h2>Davids' Menu</h2>
 <category-component title="Our Many Selections" ></category-component>
+<div>
+    <ul>
+        <li ng-repeat="category in catctrl.categoryData">
+            <a href="#/items?category={{ category.short_name }}">{{category.name}}</a>
+        </li>
+    </ul>
+</div>
