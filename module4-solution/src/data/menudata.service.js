@@ -23,8 +23,8 @@ function MenuDataService ($http) {
 
     service.getItemsForCategory = function(categoryShortName) {
         return $http( {
-            params: {"categoryShortName": categoryShortName},
-            url:    "https://davids-restaurant.herokuapp.com/menu_items.json?category=F", //:categoryShortName",
+            params: {"category": categoryShortName},
+            url:    "https://davids-restaurant.herokuapp.com/menu_items.json?category=:categoryShortName",
             method: 'GET'
         })
     }
