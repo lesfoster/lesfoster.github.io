@@ -3,7 +3,7 @@
         .component('categories',
             {
                 templateUrl: 'src/templates/menu_category.template.html',
-                //controller: 'CategoryController as catctrl',
+                //controller: 'CategoryComponentController as ccctrl',
                 bindings: {
                     categoryData: '<',
                     myTitle: '@title'
