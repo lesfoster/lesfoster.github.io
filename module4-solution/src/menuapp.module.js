@@ -46,17 +46,17 @@
             })
 
             .state('items', {
-                url: '/items',
+                url: '/items/{category}',
                 templateUrl: 'src/item_state/template/item.state.template.html',
                 controller: 'ItemStateController as itemctrl',
                 // The resolve property is to pass data into the controller as part of its initialization.
                 resolve: {
                     // 'itemStateData' is injected into itemctrl.
-                    itemStateData: ['MenuDataService',
-                        function(MenuDataService) {
+                    itemStateData: ['$stateParams','MenuDataService',
+                        function($stateParams, MenuDataService) {
                             console.log("Got category items data.");
                             // Returns the promise, but I want to see that things work.
-                            return MenuDataService.getItemsForCategory('F').then(
+                            return MenuDataService.getItemsForCategory($stateParams.category).then(
                                 function(result) {
                                     return result;
                                 },
