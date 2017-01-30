@@ -3,8 +3,10 @@
 <ul>
     <li ng-repeat="item in itemctrl.items.menu_items">
         <b>{{ item.short_name }}</b> - {{ item.name }} : {{ item.description }}.
-        {{item.small_portion_name}} ${{item.price_small}},
-        {{item.large_portion_name}} ${{item.price_large}}
+        <div>
+            <span ng-show="item.price_small">{{item.small_portion_name}} ${{item.price_small}},</span>
+            <span>{{item.large_portion_name}} ${{item.price_large}}</span>
+        </div>
 
     </li>
 </ul>
