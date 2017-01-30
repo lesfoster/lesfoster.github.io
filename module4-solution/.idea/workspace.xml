@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../module3-solution/.idea/misc.xml" afterPath="$PROJECT_DIR$/../module3-solution/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../module3-solution/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../module3-solution/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/item_state/template/item.state.template.html" afterPath="$PROJECT_DIR$/src/item_state/template/item.state.template.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -746,7 +745,7 @@
       <option name="presentableId" value="Default" />
       <updated>1485623088381</updated>
       <workItem from="1485623090692" duration="25838000" />
-      <workItem from="1485705597400" duration="24093000" />
+      <workItem from="1485705597400" duration="24228000" />
     </task>
     <task id="LOCAL-00001" summary="Saving current state.  Able to resolve down into the component's custom tag.">
       <created>1485630178988</created>
@@ -846,11 +845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485739350442</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Saving current state.  Able to resolve down into the component's custom tag.  Some nav linking.">
+      <created>1485739691963</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1485739691963</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49931000" />
+    <option name="totallyTimeSpent" value="50066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -908,7 +914,8 @@
     <MESSAGE value="Saving progression from category through to items." />
     <MESSAGE value="Functionality in place." />
     <MESSAGE value="Saving with some (rather bad) styling thrown in.  Now have moved the routing into its own module." />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving with some (rather bad) styling thrown in.  Now have moved the routing into its own module." />
+    <MESSAGE value="Saving current state.  Able to resolve down into the component's custom tag.  Some nav linking." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving current state.  Able to resolve down into the component's custom tag.  Some nav linking." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
