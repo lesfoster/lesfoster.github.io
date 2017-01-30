@@ -1,9 +1,8 @@
 <div>
-    <h3>Enjoy {{ ccctrl.myTitle }}</h3>
-    <!-- NOTE: never did find a way to inject category data from the state controller to this controller. Sigh! -->
-    <!--<ol>-->
-        <!--<li ng-repeat="item in ccctrl.categoryData">-->
-            <!--<b>{{ item.short_name }}</b> - {{ item.name }}-->
-        <!--</li>-->
-    <!--</ol>-->
+    <h2>Choose from Our Broad Selection</h2>
+    <ol>
+        <li ng-repeat="category in $ctrl.categories">
+            <a href="#/items/{{ category.short_name }}">{{category.name}}</a>
+        </li>
+    </ol>
 </div>

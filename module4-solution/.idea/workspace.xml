@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="920a3823-71af-4610-a2c1-6deaf8e5e832" name="Default" comment="Saving current state.  Able to resolve down into the component's custom tag.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/category_component/controller/category.component.controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/item_component/controller/item.component.controller.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../module3-solution/.idea/misc.xml" afterPath="$PROJECT_DIR$/../module3-solution/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../module3-solution/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../module3-solution/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category_component/category.component.js" afterPath="$PROJECT_DIR$/src/category_component/category.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category_component/template/category.component.template.html" afterPath="$PROJECT_DIR$/src/category_component/template/category.component.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category_state/controller/category.state.controller.js" afterPath="$PROJECT_DIR$/src/category_state/controller/category.state.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/category_state/template/category.state.template.html" afterPath="$PROJECT_DIR$/src/category_state/template/category.state.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/item_component/items.component.js" afterPath="$PROJECT_DIR$/src/item_component/items.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/item_component/template/menu_items.template.html" afterPath="$PROJECT_DIR$/src/item_component/template/menu_items.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/item_state/template/item.state.template.html" afterPath="$PROJECT_DIR$/src/item_state/template/item.state.template.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,31 +30,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="category.state.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category_state/controller/category.state.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flexslider.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/flexslider.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="153">
+              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -53,18 +53,8 @@
       <file leaf-file-name="category.component.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/category_component/category.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.component.template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/category_component/template/category.component.template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="61" lean-forward="false" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+            <state relative-caret-position="187">
+              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -73,8 +63,28 @@
       <file leaf-file-name="category.state.template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/category_state/template/category.state.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.component.template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/category_component/template/category.component.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/item_component/items.component.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,35 +100,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.state.template.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="item.state.template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/item_state/template/item.state.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routes.js">
+      <file leaf-file-name="menu_items.template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/item_component/template/menu_items.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menudata.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/menudata.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-              <folding>
-                <marker date="1485729163143" expanded="true" signature="161:948" ph="{...}" />
-                <marker date="1485729163143" expanded="true" signature="718:946" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -149,10 +146,12 @@
       <find>injected</find>
       <find>ccctrl</find>
       <find>categoryData</find>
-      <find>categoryStateData</find>
       <find>menu_items</find>
       <find>left</find>
       <find>margin</find>
+      <find>categoryStateData</find>
+      <find>ItemComponentController</find>
+      <find>controller</find>
     </findStrings>
     <dirStrings>
       <dir>C:\docs\Coursera\Angular_SinglePage\gitfiles\master\lesfoster.github.io\module4-solution</dir>
@@ -180,23 +179,23 @@
         <option value="$PROJECT_DIR$/src/module/menuapp.module.js" />
         <option value="$PROJECT_DIR$/src/category_component/categories.component.js" />
         <option value="$PROJECT_DIR$/src/category_module/category.module.js" />
-        <option value="$PROJECT_DIR$/src/category_state/controller/category.state.controller.js" />
         <option value="$PROJECT_DIR$/src/category_component/controller/category.component.controller.js" />
-        <option value="$PROJECT_DIR$/src/item_component/template/menu_items.template.html" />
-        <option value="$PROJECT_DIR$/src/item_component/controller/item.component.controller.js" />
         <option value="$PROJECT_DIR$/src/item_module/item.module.js" />
-        <option value="$PROJECT_DIR$/src/item_component/items.component.js" />
         <option value="$PROJECT_DIR$/src/item_state/controller/item.state.controller.js" />
         <option value="$PROJECT_DIR$/src/data/menudata.service.js" />
-        <option value="$PROJECT_DIR$/src/category_component/template/category.component.template.html" />
-        <option value="$PROJECT_DIR$/src/category_component/category.component.js" />
         <option value="$PROJECT_DIR$/src/routes.js" />
         <option value="$PROJECT_DIR$/src/menuapp.module.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/flexslider.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/src/category_state/controller/category.state.controller.js" />
         <option value="$PROJECT_DIR$/src/category_state/template/category.state.template.html" />
+        <option value="$PROJECT_DIR$/src/category_component/category.component.js" />
+        <option value="$PROJECT_DIR$/src/item_component/template/menu_items.template.html" />
+        <option value="$PROJECT_DIR$/src/category_component/template/category.component.template.html" />
+        <option value="$PROJECT_DIR$/src/item_component/items.component.js" />
         <option value="$PROJECT_DIR$/src/item_state/template/item.state.template.html" />
+        <option value="$PROJECT_DIR$/src/item_component/controller/item.component.controller.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -238,6 +237,56 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="module4-solution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module4-solution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module4-solution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module4-solution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module4-solution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="item_component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module4-solution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module4-solution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category_component" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -745,7 +794,7 @@
       <option name="presentableId" value="Default" />
       <updated>1485623088381</updated>
       <workItem from="1485623090692" duration="25838000" />
-      <workItem from="1485705597400" duration="24228000" />
+      <workItem from="1485705597400" duration="25991000" />
     </task>
     <task id="LOCAL-00001" summary="Saving current state.  Able to resolve down into the component's custom tag.">
       <created>1485630178988</created>
@@ -852,11 +901,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485739691963</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Saving current state.  Able to resolve down into the component's custom tag.">
+      <created>1485739820551</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1485739820552</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50066000" />
+    <option name="totallyTimeSpent" value="51829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -900,7 +956,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Saving current state.  Able to resolve down into the component's custom tag." />
     <MESSAGE value="Slightly better.  No fixes to functionality." />
     <MESSAGE value="Saving current state." />
     <MESSAGE value="Working through the controller function after bypassing categories.  Still not giving us the data, but we can see that the controller is actually being used." />
@@ -915,7 +970,8 @@
     <MESSAGE value="Functionality in place." />
     <MESSAGE value="Saving with some (rather bad) styling thrown in.  Now have moved the routing into its own module." />
     <MESSAGE value="Saving current state.  Able to resolve down into the component's custom tag.  Some nav linking." />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving current state.  Able to resolve down into the component's custom tag.  Some nav linking." />
+    <MESSAGE value="Saving current state.  Able to resolve down into the component's custom tag." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving current state.  Able to resolve down into the component's custom tag." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1035,14 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category_state/controller/category.state.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/category_component/controller/category.component.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1051,26 +1099,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/item_component/controller/item.component.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/item_module/item.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/item_component/items.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -1091,30 +1123,6 @@
             <marker date="1485729163143" expanded="true" signature="161:948" ph="{...}" />
             <marker date="1485729163143" expanded="true" signature="718:946" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/item_component/template/menu_items.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category_component/template/category.component.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="61" lean-forward="false" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/category_component/category.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,14 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/menuapp.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1158,18 +1158,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/category_state/template/category.state.template.html">
+    <entry file="file://$PROJECT_DIR$/src/item_component/template/menu_items.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/item_state/template/item.state.template.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/item_component/items.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category_state/template/category.state.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category_component/template/category.component.template.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category_state/controller/category.state.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/item_component/controller/item.component.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/category_component/category.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,18 +1,2 @@
-<h2>Select from these Items</h2>
-<item-component title="{{itemctrl.items.category.name}}" ></item-component>
-<div>
-    <a href="#/categories">Back to Categories</a>
-</div>
-<ul>
-    <li ng-repeat="item in itemctrl.items.menu_items">
-        <b>{{ item.short_name }}</b> - {{ item.name }} : {{ item.description }}.
-        <div>
-            <span ng-show="item.price_small">{{item.small_portion_name}} ${{item.price_small}},</span>
-            <span>{{item.large_portion_name}} ${{item.price_large}}</span>
-        </div>
+<item-component title="{{itemctrl.items.category.name}}" items="itemctrl.items" ></item-component>
 
-    </li>
-</ul>
-<div>
-    <a href="#/categories">Back to Categories</a>
-</div>

@@ -4,8 +4,7 @@
                 {
                     templateUrl: 'src/item_component/template/menu_items.template.html',
                     bindings: {
-                        //items: '<',
-                        myTitle: '@title'
+                        items: '<',
                     }
                 }
             )

@@ -8,7 +8,7 @@
     CategoryStateController.$inject = ['categoryStateData'];
     function CategoryStateController(categoryStateData) {
         var catctrl = this;
-        catctrl.categoryData = categoryStateData.data;
+        catctrl.categories = categoryStateData.data;
         console.log("Got categories");
     }
 

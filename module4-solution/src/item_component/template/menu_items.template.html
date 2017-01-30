@@ -1,8 +1,17 @@
+<h1>{{ $ctrl.myTitle }}</h1>
 <div>
-    <h1>{{ $ctrl.myTitle }}</h1>
-    <!--<ol>-->
-        <!--<li ng-repeat="item in $ctrl.items">-->
-            <!--<b>{{ item.short_name }}</b> - {{ item.name }} : {{ item.description }}-->
-        <!--</li>-->
-    <!--</ol>-->
+    <a href="#/categories">Back to Categories</a>
+</div>
+<ul>
+    <li ng-repeat="item in $ctrl.items.menu_items">
+        <b>{{ item.short_name }}</b> - {{ item.name }} : {{ item.description }}.
+        <div>
+            <span ng-show="item.price_small">{{item.small_portion_name}} ${{item.price_small}},</span>
+            <span>{{item.large_portion_name}} ${{item.price_large}}</span>
+        </div>
+
+    </li>
+</ul>
+<div>
+    <a href="#/categories">Back to Categories</a>
 </div>
