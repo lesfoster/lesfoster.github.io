@@ -63,6 +63,8 @@
                        class="signup-input"
                        ng-model="newsLetter.favorite"
                        ng-change="newsLetter.dirty()"
+                       ng-blur="newsLetter.checkFavorite()"
+                       ng-focus="newsLetter.clearFavoriteError()"
                 ><span ng-if="newsLetter.noSuchFavorite">No such menu number exists</span>
             </div>
             <button

@@ -46,6 +46,10 @@ function NewsLetterController(newsletterStateData, RegistrationService) {
         }
     }
 
+    newsLetter.clearFavoriteError = function() {
+        newsLetter.noSuchFavorite = false;
+    }
+
     // The "dirty flag".  Turn this on to imply the registration has not been carried out.
     newsLetter.dirty = function() {
         newsLetter.isSubmitted = false;
