@@ -7,8 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../module4-solution/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../module4-solution/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/public/my-info/my-info.controller.js" afterPath="$PROJECT_DIR$/src/public/my-info/my-info.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/public/my-info/my-info.html" afterPath="$PROJECT_DIR$/src/public/my-info/my-info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/public/signup/newsletter.controller.js" afterPath="$PROJECT_DIR$/src/public/signup/newsletter.controller.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +35,7 @@
       <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/public/signup/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
+            <state relative-caret-position="610">
               <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
               <folding />
             </state>
@@ -54,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newsletter.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newsletter.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/public/signup/newsletter.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="223">
               <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
               <folding />
             </state>
@@ -84,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-info.controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="my-info.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/public/my-info/my-info.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+            <state relative-caret-position="306">
+              <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
               <folding>
                 <element signature="e#0#51#0" expanded="false" />
               </folding>
@@ -100,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/src/public/my-info/my-info.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -111,16 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="359">
               <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/angular.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="130" column="108" lean-forward="false" selection-start-line="130" selection-start-column="108" selection-end-line="130" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -184,8 +172,8 @@
         <option value="$PROJECT_DIR$/src/public/registration/registration.service.js" />
         <option value="$PROJECT_DIR$/src/public/signup/signup.html" />
         <option value="$PROJECT_DIR$/src/public/my-info/my-info.html" />
-        <option value="$PROJECT_DIR$/src/public/my-info/my-info.controller.js" />
         <option value="$PROJECT_DIR$/src/public/signup/newsletter.controller.js" />
+        <option value="$PROJECT_DIR$/src/public/my-info/my-info.controller.js" />
       </list>
     </option>
   </component>
@@ -747,7 +735,7 @@
       <workItem from="1486603571796" duration="8434000" />
       <workItem from="1486690970204" duration="7487000" />
       <workItem from="1486775191289" duration="7999000" />
-      <workItem from="1486827043903" duration="10328000" />
+      <workItem from="1486827043903" duration="10509000" />
     </task>
     <task id="LOCAL-00001" summary="Now carries out server validation of menu choice.">
       <created>1486791590286</created>
@@ -798,11 +786,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486839254481</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Saving successful title.">
+      <created>1486841205009</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1486841205009</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35017000" />
+    <option name="totallyTimeSpent" value="35198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -853,7 +848,8 @@
     <MESSAGE value="Checking favorite on blur." />
     <MESSAGE value="Doing the favorite-check on submission in the prescribed way, rather than with the &quot;resolved&quot; entire menu of items." />
     <MESSAGE value="Description has been carried into the My Info page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Description has been carried into the My Info page." />
+    <MESSAGE value="Saving successful title." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving successful title." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -876,8 +872,14 @@
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/public/my-info/my-info.controller.js</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1203,26 +1205,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/signup/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/common.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="73" lean-forward="false" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/my-info/my-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1251,16 +1237,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/my-info/my-info.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/menu.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -1271,9 +1247,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/public/signup/newsletter.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="223">
           <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/signup/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/my-info/my-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/my-info/my-info.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

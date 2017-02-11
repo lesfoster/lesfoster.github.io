@@ -18,6 +18,7 @@ function MyInfoController(myInfo, ApiPath) {
         myInfoCtrl.phone = myInfo.phone;
         myInfoCtrl.favoriteDescription = myInfo.favoriteDescription;
         myInfoCtrl.favoriteTitle = myInfo.favoriteTitle;
+        myInfoCtrl.favorite = myInfo.favorite;
         myInfoCtrl.imageLink = ApiPath + "/images/" + myInfoCtrl.favorite + ".jpg";
     }
 
