@@ -11,18 +11,19 @@ function NewsLetterController(newsletterStateData, RegistrationService) {
     newsLetter.menuItems = newsletterStateData;
 
     newsLetter.submit = function() {
-        console.log("Submitted form.  Email is " + newsLetter.email);
         newsLetter.checkFavorite();
-        RegistrationService.register(
-            {
+        if (! newsLetter.noSuchFavorite) {
+            console.log("Submitting data.  Email is " + newsLetter.email);
+            var regInfo = {
                 firstname: newsLetter.firstname,
                 lastname: newsLetter.lastname,
                 email: newsLetter.email,
                 phone: newsLetter.phone,
                 favorite: newsLetter.favorite
-            }
-        );
-        if (! newsLetter.noSuchFavorite) {
+            };
+            console.log("Reg-info: " + regInfo.firstname);
+
+            RegistrationService.register(regInfo);
             newsLetter.isSubmitted = true;
         }
     }
