@@ -125,6 +125,13 @@ h3.menu-item-title {
 .signup-button {
   background: #761c19
 }
+/* END SIGNUP PAGE */
+
+/* MY-INFO PAGE */
+.my-info-div {
+  margin-left: 50px
+}
+/* END MY-INFO PAGE */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {

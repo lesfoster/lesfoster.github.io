@@ -10,16 +10,15 @@ angular.module('public')
 MyInfoController.$inject = ['myInfo'];
 function MyInfoController(myInfo) {
     var myInfoCtrl = this;
-
-    myInfoCtrl.populateRegistrationInfo = function() {
-        if (myInfo) {
-            myInfoCtrl.firstname = myInfo.firstname;
-            myInfoCtrl.lastname = myInfo.lastname;
-            myInfoCtrl.email = myInfo.email;
-            myInfoCtrl.phone = myInfo.phone;
-            myInfoCtrl.favorite = myInfo.favorite;
-        }
+    if (myInfo) {
+        console.log("Got info to my-info controller: " + myInfo.firstname);
+        myInfoCtrl.firstname = myInfo.firstname;
+        myInfoCtrl.lastname = myInfo.lastname;
+        myInfoCtrl.email = myInfo.email;
+        myInfoCtrl.phone = myInfo.phone;
+        myInfoCtrl.favorite = myInfo.favorite;
     }
+
 }
 
 })();
