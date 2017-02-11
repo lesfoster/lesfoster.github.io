@@ -1,0 +1,10 @@
+<div ng-if="myInfoCtrl.firstname">
+    <div>First name: {{myInfoCtrl.firstname}}</div>
+    <div>Last name: {{myInfoCtrl.lastname}}</div>
+    <div>Email: {{myInfoCtrl.email}}</div>
+    <div ng-if="myInfoCtrl.phone">Phone: {{myInfoCtrl.phone}}</div>
+    <div>Favorite: {{myInfoCtrl.favorite}}</div><!-- Needs work -->
+</div>
+<div ng-if="! myInfoCtrl.firstname">
+    Not Signed Up Yet. <a href="#/signup">Sign up Now!</a>
+</div>

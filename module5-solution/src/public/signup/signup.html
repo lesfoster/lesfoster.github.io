@@ -7,7 +7,7 @@
             <div>
                 <input type="text"
                        name="firstname"
-                       ng-model="newsletter.first"
+                       ng-model="newsLetter.first"
                        class="signup-input"
                        ng-pattern="/^[a-zA-Z\s]*$/"
                        required
@@ -20,7 +20,7 @@
             <div>
                 <input type="text"
                        name="lastname"
-                       ng-model="newsletter.last"
+                       ng-model="newsLetter.last"
                        class="signup-input"
                        ng-pattern="/^[a-zA-Z\s]*$/"
                        required
@@ -34,7 +34,7 @@
                 <input type="email"
                        name="email"
                        class="signup-input"
-                       ng-model="newsletter.email"
+                       ng-model="newsLetter.email"
                        required
                 ><span ng-if="nlsignup.email.$error.required && nlsignup.email.$touched">Email address required!</span>
                 <span ng-if="nlsignup.email.$error.email && nlsignup.email.$touched">Email address invalid format!</span>
@@ -47,7 +47,7 @@
                        name="phone"
                        class="signup-input"
                        ng-pattern="/[1-9][0-9][0-9]-?[0-9][0-9][0-9]-?[0-9][0-9][0-9][0-9]/"
-                       ng-model="newsletter.phone"
+                       ng-model="newsLetter.phone"
                 ><span ng-if="nlsignup.phone.$error.pattern && nlsignup.phone.$touched">Invalid phone number.  Use ###-###-#### or 7 digits.</span>
             </div>
             <div>
@@ -57,10 +57,15 @@
                 <input type="text"
                        name="favorite"
                        class="signup-input"
-                       ng-model="newsletter.favorite"
+                       ng-model="newsLetter.favorite"
                 ><span ng-if="nlsignup.favorite.$error.pattern && nlsignup.favorite.$touched">Please use item number!  Example: A1</span>
             </div>
-            <button ng-click="newsletter.submit()" style="background: #000000">Sign Up</button>
+            <button
+                    ng-disabled="nlsignup.$invalid"
+                    ng-click="newsLetter.submit()"
+                    class="signup-button">
+                Sign Up
+            </button>
         </div>
     </form>
 </div>

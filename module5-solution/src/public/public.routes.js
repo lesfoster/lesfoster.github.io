@@ -44,8 +44,31 @@
             .state('public.signup', {
                 url: '/signup',
                 templateUrl: 'src/public/signup/signup.html',
-                controller: 'NewsletterController',
-                controllerAs: 'newsletter'
-            });
+                controller: 'NewsLetterController',
+                controllerAs: 'newsLetter',
+                // The resolve property is to pass data into the controller as part of its initialization.
+                resolve: {
+                    // 'newsletterStateData' is injected into newsletter.
+                    newsletterStateData: ['MenuService',
+                        function(MenuService) {
+                            return MenuService.getAllMenuItems();
+                        }
+                    ]
+                }
+            })
+            .state('public.myinfo', {
+                url: '/myinfo',
+                templateUrl: 'src/public/my-info/my-info.html',
+                controller: 'MyInfoController',
+                controllerAs: 'myInfoCtrl',
+                resolve: {
+                    myInfo: ['RegistrationService',
+                        function(RegistrationService) {
+                            return RegistrationService.getRegistration();
+                        }
+                    ]
+                }
+            })
+        ;
     }
 })();
