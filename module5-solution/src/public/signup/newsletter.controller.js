@@ -22,6 +22,9 @@ function NewsLetterController(newsletterStateData, RegistrationService) {
                 favorite: newsLetter.favorite
             }
         );
+        if (! newsLetter.noSuchFavorite) {
+            newsLetter.isSubmitted = true;
+        }
     }
 
     newsLetter.checkFavorite = function() {
@@ -40,6 +43,11 @@ function NewsLetterController(newsletterStateData, RegistrationService) {
         if (! found) {
             newsLetter.noSuchFavorite = true;
         }
+    }
+
+    // The "dirty flag".  Turn this on to imply the registration has not been carried out.
+    newsLetter.dirty = function() {
+        newsLetter.isSubmitted = false;
     }
 }
 
