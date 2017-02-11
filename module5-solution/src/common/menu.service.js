@@ -34,6 +34,11 @@
             });
         };
 
+        service.getMenuItemAsync = function(shortName) {
+            var config = {};
+            return $http.get(ApiPath + '/menu_items/' + shortName + '.json', config);
+        }
+
     }
 
 })();

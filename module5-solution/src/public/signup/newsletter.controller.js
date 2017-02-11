@@ -4,14 +4,14 @@
 angular.module('public')
 .controller('NewsLetterController', NewsLetterController);
 
-NewsLetterController.$inject = ['newsletterStateData', 'RegistrationService'];
-function NewsLetterController(newsletterStateData, RegistrationService) {
+NewsLetterController.$inject = ['newsletterStateData', 'RegistrationService', 'MenuService'];
+function NewsLetterController(newsletterStateData, RegistrationService, MenuService) {
 
     var newsLetter = this;
     newsLetter.menuItems = newsletterStateData;
 
     newsLetter.submit = function() {
-        newsLetter.checkFavorite();
+        newsLetter.validateFavorite();
         if (! newsLetter.noSuchFavorite) {
             console.log("Submitting data.  Email is " + newsLetter.email);
             var regInfo = {
@@ -28,6 +28,19 @@ function NewsLetterController(newsletterStateData, RegistrationService) {
         }
     }
 
+    newsLetter.validateFavorite = function() {
+        var foundItem = MenuService.getMenuItemAsync(newsLetter.favorite);
+        foundItem.then(
+            function(response) {
+                newsLetter.noSuchFavorite = false;
+            },
+            function(error) {
+                newsLetter.noSuchFavorite = true;
+            }
+        );
+    }
+
+    // This check uses injected data to the controller.  This will be called frequently.
     newsLetter.checkFavorite = function() {
         // Wipe the favorite from this model, if it is not a valid item.
         console.log("Checking the favorite " + newsLetter.favorite);
