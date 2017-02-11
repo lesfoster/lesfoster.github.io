@@ -13,14 +13,15 @@ function NewsLetterController(newsletterStateData, RegistrationService, MenuServ
     newsLetter.submit = function() {
         newsLetter.validateFavorite();
         if (! newsLetter.noSuchFavorite) {
-            console.log("Submitting data.  Email is " + newsLetter.email);
+            console.log("Submitting data.  Title " + newsLetter.favoriteTitle);
             var regInfo = {
                 firstname: newsLetter.firstname,
                 lastname: newsLetter.lastname,
                 email: newsLetter.email,
                 phone: newsLetter.phone,
                 favorite: newsLetter.favorite,
-                favoriteDescription: newsLetter.favoriteDescription
+                favoriteDescription: newsLetter.favoriteDescription,
+                favoriteTitle: newsLetter.favoriteTitle
             };
             console.log("Reg-info: " + regInfo.firstname);
 
@@ -35,6 +36,7 @@ function NewsLetterController(newsletterStateData, RegistrationService, MenuServ
             function(response) {
                 newsLetter.noSuchFavorite = false;
                 newsLetter.favoriteDescription = response.data.description;
+                newsLetter.favoriteTitle = response.data.name;
             },
             function(error) {
                 newsLetter.noSuchFavorite = true;
@@ -53,6 +55,7 @@ function NewsLetterController(newsletterStateData, RegistrationService, MenuServ
             if (menuItem.short_name === newsLetter.favorite) {
                 found = true;
                 newsLetter.favoriteDescription = menuItem.description;
+                newsLetter.favoriteTitle = menuItem.name;
                 newsLetter.noSuchFavorite = false;
                 break;
             }

@@ -5,7 +5,8 @@
     <div ng-if="myInfoCtrl.phone">Phone: {{myInfoCtrl.phone}}</div>
     <div>
         <img src="{{myInfoCtrl.imageLink}}"/>
-        <div>Favorite: {{myInfoCtrl.favoriteDescription}}</div>
+        <div><i>Enjoy {{myInfoCtrl.favoriteTitle}}:<br/>
+            {{myInfoCtrl.favoriteDescription}}</i></div>
     </div>
 </div>
 <div ng-if="! myInfoCtrl.firstname">
