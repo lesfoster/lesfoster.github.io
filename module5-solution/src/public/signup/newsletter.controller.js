@@ -11,8 +11,8 @@ function NewsLetterController(newsletterStateData, RegistrationService) {
     newsLetter.menuItems = newsletterStateData;
 
     newsLetter.submit = function() {
-        console.log("Submitted form.  Email is " + email);
-        checkFavorite();
+        console.log("Submitted form.  Email is " + newsLetter.email);
+        newsLetter.checkFavorite();
         RegistrationService.register(
             {
                 firstname: newsLetter.firstname,
@@ -26,16 +26,19 @@ function NewsLetterController(newsletterStateData, RegistrationService) {
 
     newsLetter.checkFavorite = function() {
         // Wipe the favorite from this model, if it is not a valid item.
-        console.log("Checking the favorite " + favorite);
+        console.log("Checking the favorite " + newsLetter.favorite);
         var found = false;
-        for (var menuItem in newsLetter.menuItems) {
-            if (menuItem.shortName === newsLetter.favorite) {
+        for (var i = 0; i < newsLetter.menuItems.menu_items.length; i++) {
+            var menuItem = newsLetter.menuItems.menu_items[i];
+            //console.log("Next: "+menuItem.short_name);
+            if (menuItem.short_name === newsLetter.favorite) {
                 found = true;
+                newsLetter.noSuchFavorite = false;
                 break;
             }
         }
         if (! found) {
-            category.favorite = null;
+            newsLetter.noSuchFavorite = true;
         }
     }
 }

@@ -58,7 +58,7 @@
                        name="favorite"
                        class="signup-input"
                        ng-model="newsLetter.favorite"
-                ><span ng-if="nlsignup.favorite.$error.pattern && nlsignup.favorite.$touched">Please use item number!  Example: A1</span>
+                ><span ng-if="newsLetter.noSuchFavorite">No such menu number exists</span>
             </div>
             <button
                     ng-disabled="nlsignup.$invalid"

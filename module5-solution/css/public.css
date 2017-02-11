@@ -122,6 +122,9 @@ h3.menu-item-title {
   margin-left: 50px
 }
 
+.signup-button {
+  background: #761c19
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
