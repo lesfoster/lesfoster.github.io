@@ -19,7 +19,8 @@ function NewsLetterController(newsletterStateData, RegistrationService, MenuServ
                 lastname: newsLetter.lastname,
                 email: newsLetter.email,
                 phone: newsLetter.phone,
-                favorite: newsLetter.favorite
+                favorite: newsLetter.favorite,
+                favoriteDescription: newsLetter.favoriteDescription
             };
             console.log("Reg-info: " + regInfo.firstname);
 
@@ -33,6 +34,7 @@ function NewsLetterController(newsletterStateData, RegistrationService, MenuServ
         foundItem.then(
             function(response) {
                 newsLetter.noSuchFavorite = false;
+                newsLetter.favoriteDescription = response.data.description;
             },
             function(error) {
                 newsLetter.noSuchFavorite = true;
@@ -50,6 +52,7 @@ function NewsLetterController(newsletterStateData, RegistrationService, MenuServ
             //console.log("Next: "+menuItem.short_name);
             if (menuItem.short_name === newsLetter.favorite) {
                 found = true;
+                newsLetter.favoriteDescription = menuItem.description;
                 newsLetter.noSuchFavorite = false;
                 break;
             }

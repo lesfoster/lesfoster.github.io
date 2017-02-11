@@ -7,16 +7,17 @@
 angular.module('public')
      .controller('MyInfoController', MyInfoController);
 
-MyInfoController.$inject = ['myInfo'];
-function MyInfoController(myInfo) {
+MyInfoController.$inject = ['myInfo', 'ApiPath'];
+function MyInfoController(myInfo, ApiPath) {
     var myInfoCtrl = this;
     if (myInfo) {
-        console.log("Got info to my-info controller: " + myInfo.firstname);
+        console.log("Got info to my-info controller: " + myInfo.favoriteDescription);
         myInfoCtrl.firstname = myInfo.firstname;
         myInfoCtrl.lastname = myInfo.lastname;
         myInfoCtrl.email = myInfo.email;
         myInfoCtrl.phone = myInfo.phone;
-        myInfoCtrl.favorite = myInfo.favorite;
+        myInfoCtrl.favoriteDescription = myInfo.favoriteDescription;
+        myInfoCtrl.imageLink = ApiPath + "/images/" + myInfoCtrl.favorite + ".jpg";
     }
 
 }
