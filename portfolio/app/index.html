@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Les Foster Portfolio of Visual Applications</title>
+    <meta name="description" content="">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div>
+            <div>
+                <div class="navbar-brand">
+                    <h1>Les Foster: Just the Visuals</h1>
+                    <a href="email:lfoster.se.be@gmail.com"><span>lfoster.se.be@gmail.com</span></a>
+                </div>
+            </div>
+            <div class="navbar-header">
+                <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="visible-xs">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="collapsable-nav">
+                    <ul class="nav navbar-nav">
+                        <li class="text-center"><a href="#alignment-board">Alignment Board</a></li>
+                        <li class="text-center"><a href="#cylindrical-app">Cylindrical Viewer</a></li>
+                        <li class="text-center"><a href="#tableau-pres">Tableau Presentation</a></li>
+                        <li class="text-center"><a href="#architecture">UML Sample</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </div><!-- .container -->
+    </nav><!-- #header-nav -->
+</header>
+<!--<ul class="menu">-->
+<!--<li><a href="#!/view1">view1</a></li>-->
+<!--<li><a href="#!/view2">view2</a></li>-->
+<!--</ul>-->
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view>
+    <div class="video-stack">
+        <div id="alignment-board">
+            <h1 class="clip-header">The Alignment Board</h1>
+            <video controls="controls" width="100%" name="Alignment Board" src="clips/alignment_board.mov"></video>
+            <p>This Drag-and-Drop enabled Java OpenGL viewer makes it possible for users to superimpose aligned neurons from different fly brain samples.</p>
+        </div>
+        <div id="cylindrical-app">
+            <h1 class="clip-header">The Cylindrical Alignment App</h1>
+            <video controls="controls" width="100%" name="Cylindrical App" src="clips/CylApp_2017-03-26_1558.mov"></video>
+            <p>Available on Source Forge at <a href="https://sourceforge.net/projects/cylindrical-alignment-app/">Cylindrical Alignment App</a>, this standalone application
+                allows users to view aligned biomolecules such as DNA, RNA, and Amino Acid (protein) sequences.  Based on a project I wrote while obtaining a Master's from
+                Johns Hopkins, this viewer can handle inputs produced by such diverse tools as Gene Machine, ClustalW, and of course various flavors of BLAST (Basic Local Alignment
+                Search Tool).  The original viewer was written using Java3D, which is slowly being phased out of use. It was adopted by the Universiti Sans Malaysia to display
+                search results for an award winning project, as shown <a href="https://java.net/projects/mdg/pages/Home">here</a>.
+                Just scroll down and look for an image labeled "The MDG client default screen".
+            </p>
+        </div>
+        <div id="tableau-pres">
+            <h1 class="clip-header">Tableau Course Presentation</h1>
+            <video controls="controls" width="100%" name="Tableau Presentation" src="clips/Tableau_Pres_2016-02-07_0114.mov"></video>
+            <p>Coursera offers an excellent online course titled "Data Visualization and Communication with Tableau".  The course is taught by faculty and
+                employees of Duke University.  Above is the presentation I provided for grading by other students as part of that course.</p>
+            <p>
+                After taking the course, I also volunteered to spend three hours per week acting as a mentor. I posted literally hundreds of responses
+                to questions, ranging from simple encouragment, to helping them think about the problems they were to solve.  I also pinned several
+                responses to "frequently asked questions", on topics such as p values.
+            </p>
+        </div>
+        <div id="architecture">
+            <h1 class="clip-header">Reverse Auction Project Deployment Diagram</h1>
+            <image src="images/Reverse Auction Deployment.jpg" width="100%" />
+            <p>
+                The Oracle Certified Master Java Enterprise Architect process requires submission of a UML design for a project.  This is the "deployment diagram".
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
